@@ -1,0 +1,29 @@
+title: NoxInmortus Blog
+author: ""
+email: noxinmortus [dot] protonmail.com
+description: >-
+  Réflexions d'un sysadmin sur son métier et son rapport à l'écologie...mais pas que?
+url: "https://noxinmortus.github.io"
+github_username: NoxInmortus
+
+theme: minima
+minima:
+  skin: dark
+  
+plugins:
+  - jekyll-feed
+
+exclude:
+  - .sass-cache/
+  - .jekyll-cache/
+  - gemfiles/
+  - Gemfile
+  - Gemfile.lock
+  - node_modules/
+  - vendor/bundle/
+  - vendor/cache/
+  - vendor/gems/
+  - vendor/ruby/
+  - README.md
+  - CHANGELOG.md
+  - LICENSE
