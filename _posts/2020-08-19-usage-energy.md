@@ -8,7 +8,7 @@ Hello,
 
 A moins de ne pas utiliser quoi que ce soit qui nécessite de l'électricité ou une énergie fossile pour fonctionner, tout le monde consomme et produit un impact environnemental non négligeable. Pourquoi ? Parce que on est en 2020, en pleine crise écologique, et si on ne fait rien, nos enfants, petits-enfants et ceux qui suivront risquent d'en souffrir énormément.
 
-Au niveau individuel que faire ? Tout le monde ne peut pas/ne veut pas changer drastiquement sa vie et aller vivre tel un ermitte dans une cabane dans les bois à élever des chèvres et des poules. Alors il faut essayer d'être le plus neutre possible au niveau de son bilan carbonne. A chacun d'adapter son quotidien.
+Au niveau individuel que faire ? Tout le monde ne peut/veut pas changer drastiquement sa vie et aller vivre tel un ermite dans une cabane pour élever des chèvres et des poules. Alors il faut essayer d'être le plus neutre possible au niveau de son bilan carbonne. A chacun d'adapter son quotidien.
 
 On peut lister une pléthore d'actions simples, quelques idées :
 
@@ -21,7 +21,6 @@ Au niveau du gaz/fioul :
 - Avoir un thermostat, le chauffage ne s'active qu'a partir de 16,5° (en dessous ça picotte).
 - Utiliser une bouilloire pour faire chauffer de l'eau plutôt que la gazinière.
 - Avoir un four solaire si vous avez assez de soleil.
-- Et évidemment essayer de passer à l'électrique.
 
 Au niveau de l'électricité :
 - Eteindre la lumière quand cela n'est plus nécessaire.
@@ -29,7 +28,7 @@ Au niveau de l'électricité :
 - Utiliser des prises qui s'éteignent de manière planifiées (connectées, programmables digitales ou mécaniques), je m'en sert pour couper la borne wifi la nuit par exemple.
 - Programmer le NAS pour s'éteindre automatiquement la nuit et se mettre en veille lorsqu'il n'y a pas d'activité.
 
-Spécial chaleur, l'été la consommation électrique explose chez de nombreux individus avec l'utilisation de ventilateurs et climatisations (cette dernière est plus efficace mais aussi bien plus consomatrice...). Du coup il y a un paquet d'astuces qui permettent de lutter contre la chaleur :
+Spécial chaleur, l'été la consommation électrique explose chez de nombreux individus avec l'utilisation de ventilateurs et climatisations (cette dernière est plus efficace mais aussi bien plus consommatrice...). Du coup il y a un paquet d'astuces qui permettent de lutter contre la chaleur :
 - Fermer les rideaux/fenêtes et ouvrir toutes les portes pour laisser l'air circuler.
 - Douches froides rapides/gant froid.
 - Boire beaucoup d'eau.
