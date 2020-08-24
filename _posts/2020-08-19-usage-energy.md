@@ -8,7 +8,7 @@ Hello,
 
 A moins de ne pas utiliser quoi que ce soit qui nécessite de l'électricité ou une énergie fossile pour fonctionner, tout le monde consomme et produit un impact environnemental non négligeable. Pourquoi ? Parce que on est en 2020, en pleine crise écologique, et si on ne fait rien, nos enfants, petits-enfants et ceux qui suivront risquent d'en souffrir énormément.
 
-Au niveau individuel que faire ? Tout le monde ne peut/veut pas changer drastiquement sa vie et aller vivre tel un ermite dans une cabane pour élever des chèvres et des poules. Alors il faut essayer d'être le plus neutre possible au niveau de son bilan carbonne. A chacun d'adapter son quotidien.
+Au niveau individuel que faire ? Tout le monde ne peut/veut pas changer drastiquement sa vie et aller vivre tel un ermite dans une cabane pour élever des chèvres et des poules. Alors il faut essayer d'être le plus neutre possible au niveau de son bilan carbone. A chacun d'adapter son quotidien.
 
 On peut lister une pléthore d'actions simples, quelques idées :
 
@@ -18,12 +18,12 @@ Au niveau de l'eau :
 - Récupérer l'eau utilisée dans des récipients pour arroser les plantes (gaffe aux produits que vous mettez dans l'eau, du savon bio c'est cool) ou remplir l'eau des toilettes.
 
 Au niveau du gaz/fioul :
-- Avoir un thermostat, le chauffage ne s'active qu'a partir de 16,5° (en dessous ça picotte).
+- Avoir un thermostat, le chauffage ne s'active qu'a partir de 16,5° (en dessous ça picote).
 - Utiliser une bouilloire pour faire chauffer de l'eau plutôt que la gazinière.
 - Avoir un four solaire si vous avez assez de soleil.
 
 Au niveau de l'électricité :
-- Eteindre la lumière quand cela n'est plus nécessaire.
+- Éteindre la lumière quand cela n'est plus nécessaire.
 - Débrancher ce qui ne sert pas lorsque cela consomme de l'énergie même en veille (les objets connectés, où je ne sais quoi qui dispose d'une horloge inutile...).
 - Utiliser des prises qui s'éteignent de manière planifiées (connectées, programmables digitales ou mécaniques), je m'en sert pour couper la borne wifi la nuit par exemple.
 - Programmer le NAS pour s'éteindre automatiquement la nuit et se mettre en veille lorsqu'il n'y a pas d'activité.
