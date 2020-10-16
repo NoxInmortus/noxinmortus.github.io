@@ -1,0 +1,34 @@
+---
+layout: post
+title: ProtonMail
+date: 2020-10-16
+---
+
+Hello,
+
+Si cela n'était pas déjà limpide, je souhaite avoir une vie et une consommation plus éthique, plus responsable et plus respectueuse de ma vie privée. Il y a énormément de facettes à cette problématique. Celle que je souhaite aborder est l'utilisation d'un service mail.
+
+J'ai initialement utilisé `laposte.net` lors de mon initiation à l'informatique en 6e, puis j'ai décidé d'utiliser un service mail qui faisait plus "professionel", et aussi qui était plus ergonomique... J'ai nommé `Gmail`. A l'époque Google était la source de nombreuses avancées technologiques et avait encore la cotte avec son slogan `don't be evil`... Que cela a changé...
+
+Maintenant Google fait partie des [GAFAM](https://fr.wikipedia.org/wiki/GAFAM), et est un des premier à miner votre vie privée pour en vendre les informations.
+
+En bref, [ProtonMail](https://fr.wikipedia.org/wiki/ProtonMail) est un service mail chiffrée dont les données, et l'entreprise, sont situées en Suisse. Le service dispose d'une offre gratuite suffisante pour tout usage, et dispose d'offres payantes pour des fonctionnalités supplémentaires.
+
+Dès 2013 j'ai été très intérressé par ce service, mais je ne l'avais pas jugé assez mature à l'époque. Après l'avoir de nouveau utilisé récémment, j'ai changé de point de vue.
+
+J'ai longtemps hésité à m'auto-héberger, j'aurais réalisé un premier serveur principal chez Scaleway, puis un secondaire sur un RaspberryPi à la maison, et ajouté de la réplication entre les deux.
+
+Je souhaitais avoir également la stack complète Mail Server/SMTP/Anti-Spam/Anti-Virus/OpenDKIM/OpenDMARC avec du TLS Let's Encrypt de partout, un Webmail, de l'authentification LDAP, et bien sûr, le tout sous Docker, et supervisé par Zabbix.
+
+Tout ceci, en plus de coûter de l'argent (estimons pour une année, 120€ pour le serveur principal, 10€ un nom de domaine, 50€ pour le RaspberryPi et ses accessoires), va surtout demander énormément de temps... Monter un tel projet est un gouffre dans lequel je ne souhaite pas me perdre. Et j'omet volontairement la maintenance potentielle...
+
+J'ai étudié de nombreuses solutions "pré-machées", dont voici les plus intérressantes :
+
+- <https://github.com/Mailu/Mailu>
+- <https://github.com/tomav/docker-mailserver>
+- <https://github.com/postalhq/postal>
+- <https://github.com/modoboa/modoboa>
+
+Malheureusement ce faisant on perds énormément en compréhension/maitrise de l'architecture lorsque tout est installé de cette façon. Ce qui peut engendrer une perte de temps considérable en cas d'incident...
+
+Bref. En conséquence de quoi j'ai décidé d'aller chez ProtonMail, prendre l'offre `Plus` pour 79€ sur 2 ans. Je n'ai pas à gérer tout l'architecture derrière, et j'y gagne même financièrement parlant. En parrallèle je supporte un service qui se veut éthique et respectueux de la vie privée. What else ?
