@@ -1,0 +1,20 @@
+---
+layout: post
+title: Électricité - Episode 02
+date: 2020-11-14
+---
+
+Hello,
+
+Pour faire suite au premier article [Électricité - Episode 01](https://noxinmortus.github.io/2020/08/19/electricity01.html), j'ai vu une des dernières vidéos Youtube du Réveilleur, intitulé [Les dessous de l'électricité verte](https://www.youtube.com/watch?v=goceQuwWwKA). Il nous y décrit pas mal de détails sur le fonctionnement économique de l'électricité verte, sa redistribution dans le réseau électrique et sa consommation par les usagers, qui m'a été très instructive.
+
+J'ai eu le temps d'y réfléchir et je me suis penché sur les fournisseurs d'électficité verte accessible dans ma région, et ai découvert [Enercoop](https://www.enercoop.fr/), qui est une Coopérative fournisseur d'énergie 100% renouvelables et à taille humaine. Leur site est vraiment très exhaustif et je ne peux que conseiller d'aller y faire un tour.
+
+L'estimation tarifaire s'avère plus cher qu'un fournisseur grand public (~250€ de plus estimé pour ma consommation). Pour expliquer ce tarif il écrivent :
+```
+Si l'offre d'Enercoop est en moyenne 17 % plus chère que celle du fournisseur historique, elle tente de mieux rémunérer les producteurs d'énergie, en tendant vers un prix sécurisant. Dans une logique s'approchant du commerce équitable, Enercoop innove activement dans ses offres d'achat pour se rapprocher des coûts de production.
+```
+
+Et... ça ne me pose pas de problème de donner un peu plus de mon argent à une Coopérative qui oeuvre pour la transition énergétique. Un petit pas de plus dans la bonne direction.
+
+A+
