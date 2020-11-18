@@ -1,6 +1,6 @@
 title: NoxInmortus Blog
 author: ""
-email: noxinmortus [dot] protonmail.com
+email: me [at] noxinmortus.fr
 description: >-
   Réflexions d'un sysadmin sur son métier et son rapport à l'écologie...mais pas que?
 url: "https://noxinmortus.github.io"
@@ -9,7 +9,7 @@ github_username: NoxInmortus
 theme: minima
 minima:
   skin: dark
-  
+
 plugins:
   - jekyll-feed
 
