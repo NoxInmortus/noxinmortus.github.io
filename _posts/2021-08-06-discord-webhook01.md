@@ -17,6 +17,7 @@ Le premier bloc à résoudre était d'obtenir la date du dernier samedi et du de
 J'ai déniché un bout de code Python qui faisait pratiquement tout le job (deuxième lien dans les sources), et l'ai très légèrement adapté afin que l'année soit récupérée depuis le système hôte, et que son seul et unique argument soit le "numéro du jour de la semaine dans l'ordre inverse". Donc que `Dimanche = 1`, `Samedi = 2`, etc. Le reste est assez facilement lisible :
 
 ```python
+# last.day.py
 #!/usr/bin/env python3
 
 # First and only parameter is the day number you want in reverse order.
@@ -42,6 +43,7 @@ for month in range(1, 13):
 Vient ensuite le script bash un peu moche et fait à la va-vite mais qui permet de faire le reste du travail (je suis parti du troisième lien des sources, c'est d'ailleurs ce dernier lien qui m'a donné envie de faire tout ceci):
 
 ```bash
+# discord-webhook-event.sh
 #!/usr/bin/env bash
 set -eu
 
@@ -105,6 +107,20 @@ curl -X POST \
     -F "content=${MESSAGE}" \
     -F "username=${USERNAME}" \
     "${WEBHOOK}"
+```
+
+Et enfin le tout lancé via des crons depuis un RaspberryPi :
+```
+# /etc/cron.d/discord
+PATH=/bin:/sbin:/usr/bin:/usr/sbin:/usr/local/bin
+#Ansible: sunday events
+0 17 1 1-11/2 * root  /usr/local/bin/discord-webhook-event.sh 1 >/dev/null 2>&1
+#Ansible: saturday events
+0 17 1 */2 * root  /usr/local/bin/discord-webhook-event.sh 2 >/dev/null 2>&1
+#Ansible: sunday events reminder
+0 17 15,24 1-11/2 * root  /usr/local/bin/discord-webhook-event.sh 1 reminder >/dev/null 2>&1
+#Ansible: saturday events reminder
+0 17 15,24 */2 * root  /usr/local/bin/discord-webhook-event.sh 2 reminder >/dev/null 2>&1
 ```
 
 # Sources:
