@@ -8,17 +8,23 @@ Hello,
 
 ce post est/sera utilisé pour maintenir une base d'articles sur la nocivité des GAFAMs, mais également d'options pour sortir de leur main-mise sur nos données personnelles.
 
-
-# 2021-08-01
-
 ## Getting out
 - (FR) <https://trolliet.info/blog/026-extensionfirefox/>
 - (FR) <https://open-freax.fr/pistage-episode-3-rapture/>
 - (FR) <https://blog.dreads-unlock.fr/hygiene-numerique-quelles-ressources-pour-creuser-le-sujet/>
 - (FR) <https://serveur410.com/consulter-instagram-youtube-sans-compte-et-anonymement/>
 - (FR) <https://blog.libreon.fr/dites-stop-a-la-publicite-sur-internet/>
+- (FR) <https://lelibreauquotidien.fr/2021/08/20/installer-lineageos-ou-e-nouvelle-version-amelioree/>
+- (FR) <https://www.blog-libre.org/>
+- (FR) <https://www.notarobot.fr/2018/03/28/degoogliser-son-smartphone-android-cest-presque-facile-partie-1/>
 
 ## Look how bad they are
 - (FR) <https://esther.codes/les-mouchards-dans-nos-mobiles-rendent-la-surveillance-de-masse-possible/>
+- (FR) <https://www.pixeldetracking.com/fr/les-signaux-resilients-de-facebook-ou-comment-la-surveillance-sadapte>
+- (FR) <https://www.laquadrature.net/2021/05/25/les-gafam-echappent-au-rgpd-avec-la-complicite-de-la-cnil/>
+- (FR) <https://www.laquadrature.net/2021/07/08/dysfonctionnements-systemiques-des-autorites-de-protection-des-donnees-le-cas-belge/>
+- (FR) <https://www.laquadrature.net/2021/07/30/amende-de-746-millions-deuros-contre-amazon-suite-a-nos-plaintes-collectives/>
+- (FR) <https://www.laquadrature.net/2021/03/17/health-data-hub-du-fantasme-de-lintelligence-artificielle-a-la-privatisation-de-nos-donnees-de-sante/>
+- (FR) <https://open-freax.fr/rgpd-dark-patterns/>
 
 A+
