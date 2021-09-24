@@ -17,6 +17,8 @@ ce post est/sera utilisé pour maintenir une base d'articles sur la nocivité de
 - (FR) <https://lelibreauquotidien.fr/2021/08/20/installer-lineageos-ou-e-nouvelle-version-amelioree/>
 - (FR) <https://www.blog-libre.org/>
 - (FR) <https://www.notarobot.fr/2018/03/28/degoogliser-son-smartphone-android-cest-presque-facile-partie-1/>
+- (FR) <https://www.killiankemps.fr/fr/blog/coin-lecture-et-film-pour-sensibiliser-a-la-protection-de-la-vie-privee/>
+- (FR) <https://protege-moi-sur-internet.com/>
 
 ## Look how bad they are
 - (FR) <https://esther.codes/les-mouchards-dans-nos-mobiles-rendent-la-surveillance-de-masse-possible/>
