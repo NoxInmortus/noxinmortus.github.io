@@ -19,6 +19,12 @@ ce post est/sera utilisé pour maintenir une base d'articles sur la nocivité de
 - (FR) <https://www.notarobot.fr/2018/03/28/degoogliser-son-smartphone-android-cest-presque-facile-partie-1/>
 - (FR) <https://www.killiankemps.fr/fr/blog/coin-lecture-et-film-pour-sensibiliser-a-la-protection-de-la-vie-privee/>
 - (FR) <https://protege-moi-sur-internet.com/>
+- (FR) <https://korben.info/bloquer-tracker-gmail.html>
+- (EN) <https://www.privacytools.io/>
+- (EN) <https://www.privacyguides.org/>
+- (FR) <https://serveur410.com/un-smartphone-sans-google-a-100e-ou-moins/>
+- (FR) <https://linuxfr.org/users/polochon-2/journaux/degoogliser-son-smartphone-pour-les-nuls-ou-les-gens-presses>
+- (FR) <https://www.toolinux.com/?f-droid-la-boutique-d-pplications-android-open-source-guide>
 
 ## Look how bad they are
 - (FR) <https://esther.codes/les-mouchards-dans-nos-mobiles-rendent-la-surveillance-de-masse-possible/>
@@ -28,5 +34,7 @@ ce post est/sera utilisé pour maintenir une base d'articles sur la nocivité de
 - (FR) <https://www.laquadrature.net/2021/07/30/amende-de-746-millions-deuros-contre-amazon-suite-a-nos-plaintes-collectives/>
 - (FR) <https://www.laquadrature.net/2021/03/17/health-data-hub-du-fantasme-de-lintelligence-artificielle-a-la-privatisation-de-nos-donnees-de-sante/>
 - (FR) <https://open-freax.fr/rgpd-dark-patterns/>
+- (EN) <https://linuxfr.org/users/spacefox/journaux/google-is-evil-ce-qu-on-trouve-dans-une-plainte-contre-eux>
+- (FR) <https://serveur410.com/tu-nas-rien-a-cacher-et-cest-ok-mais-il-y-a-un-autre-probleme/>
 
 A+
