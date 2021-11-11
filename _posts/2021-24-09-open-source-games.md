@@ -20,6 +20,7 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Retrogames : <https://www.retrogames.cc/>
 - Bay12games : <https://www.bay12games.com/>
 - Watabou games (Browser): <http://watabou.ru/>
+- Jeux de devnewton (Browser) : <https://play.devnewton.fr/>
 
 ## Games
 - A better world (Browser/Textuel) : <https://abw.blue/>
