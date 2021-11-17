@@ -12,6 +12,10 @@ minima:
 
 plugins:
   - jekyll-feed
+  - jekyll-paginate
+
+paginate: 8
+paginate_path: /page:num/
 
 exclude:
   - .sass-cache/
