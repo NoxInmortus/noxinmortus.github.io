@@ -1,6 +1,7 @@
 ---
 layout: post
 title: Open-Source Games
+categories: gaming
 date: 2021-09-24
 ---
 
