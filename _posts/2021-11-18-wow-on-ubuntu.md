@@ -1,0 +1,165 @@
+---
+layout: post
+title: World of Warcraft on Ubuntu
+date: 2021-11-18
+---
+
+Hello,
+
+Petit mémo pour jouer à World of Warcraft sur Ubuntu 20.04 (fonctionne sur d'autres versions d'Ubuntu et dérivées) via Lutris & WineHQ.
+
+Voici les specs du laptop sur lequel cette procédure à été réalisée:
+```
+[System]
+OS:              KDE neon 20.04 focal
+Arch:            x86_64
+Kernel:          5.11.0-40-generic
+Desktop:         KDE
+Display Server:  x11
+[CPU]
+Vendor:          GenuineIntel
+Model:           Intel(R) Core(TM) i7-5600U CPU @ 2.60GHz
+Physical cores:  2
+Logical cores:   4
+[Memory]
+RAM:             7.6 GB
+Swap:            1.0 GB
+[Graphics]
+Vendor:          Intel
+OpenGL Renderer: Mesa Intel(R) HD Graphics 5500 (BDW GT2)
+OpenGL Version:  4.6 (Compatibility Profile) Mesa 21.2.5 - kisak-mesa PPA
+OpenGL Core:     4.6 (Core Profile) Mesa 21.2.5 - kisak-mesa PPA
+OpenGL ES:       OpenGL ES 3.2 Mesa 21.2.5 - kisak-mesa PPA
+Vulkan:          Supported
+```
+
+## Drivers
+
+Avant toute chose il nous faut installer les drivers graphiques à jour pour notre matériel. Voici les notes pour NVIDIA et AMD/Intel Graphics (du 18/11/2021) (<https://github.com/lutris/docs/blob/master/InstallingDrivers.md>). Si comme moi vous faites ça sur un vieux laptop et que vous n'êtes même pas certain d'avoir une carte graphique vous pouvez vérifier ça ainsi :
+
+```
+sudo lshw -C display
+  *-display                 
+       description: VGA compatible controller
+       product: HD Graphics 5500
+       vendor: Intel Corporation
+       physical id: 2
+       bus info: pci@0000:00:02.0
+       version: 09
+       width: 64 bits
+       clock: 33MHz
+       capabilities: msi pm vga_controller bus_master cap_list rom
+       configuration: driver=i915 latency=0
+       resources: irq:47 memory:c0000000-c0ffffff memory:b0000000-bfffffff ioport:5000(size=64) memory:c0000-dffff
+```
+
+Dans mon exemple j'ai donc juste une Intel Graphics.
+
+#### Pour NVIDIA
+
+>To get the latest Nvidia drivers it is necessary to add the Proprietary GPU Drivers PPA, enable 32 bit architecture (if you haven't already), update to refresh packages and then install the 495 driver and support for the Vulkan API (will be functional only if you have a Vulkan capable GPU):
+
+>To do all of that, run this one command:
+```
+sudo add-apt-repository ppa:graphics-drivers/ppa && sudo dpkg --add-architecture i386 && sudo apt update && sudo apt install -y nvidia-driver-495 libvulkan1 libvulkan1:i386
+```
+>Reboot to apply changes.
+
+>Warning: Please ensure your graphics card is supported by the 495 driver before installing. For a list of supported GPUs click here: https://www.nvidia.com/Download/driverResults.aspx/181274/en-us
+
+>Disclaimer: Sometimes we forget to update the guide to reference the latest version of the Nvidia driver. You can check the latest version of the Nvidia driver for your gpu here and then replace 495 in nvidia-driver-495 with the first part of the version number (the one before the dot, 495.44) that is actually latest: https://www.nvidia.com/Download/index.aspx
+
+#### Pour AMD/Intel Graphics
+
+>To make sure you are running the latest drivers for AMD/Intel graphics, you need to add kisak-mesa PPA, enable 32 bit architecture (if you haven't already), update and upgrade your system, install support for 32-bit games and install the support for Vulkan API (will be functional only if you have a Vulkan capable GPU):
+
+>To do all of that, run this one command:
+```
+sudo add-apt-repository ppa:kisak/kisak-mesa && sudo dpkg --add-architecture i386 && sudo apt update && sudo apt upgrade && sudo apt install libgl1-mesa-dri:i386 mesa-vulkan-drivers mesa-vulkan-drivers:i386
+```
+>Reboot to apply changes.
+
+>Note: Only Ubuntu 18.04 and higher is supported for AMD and Intel graphics.
+
+>Note for Intel integrated graphics users: Only Skylake and newer Intel CPUs (processors) offer full Vulkan support. Broadwell, Haswell and Ivy Bridge only offer partial support, which will very likely not work with a lot of games properly. Sandy Bridge and older lack any Vulkan support whatsoever.
+
+## WineHQ
+
+On va maintenant installer WineHQ (<https://github.com/lutris/docs/blob/master/WineDependencies.md>).
+
+Pour la petite explication:
+>Wine (originally an acronym for "Wine Is Not an Emulator") is a compatibility layer capable of running Windows applications on several POSIX-compliant operating systems, such as Linux, macOS, & BSD. Instead of simulating internal Windows logic like a virtual machine or emulator, Wine translates Windows API calls into POSIX calls on-the-fly, eliminating the performance and memory penalties of other methods and allowing you to cleanly integrate Windows applications into your desktop.
+
+```
+sudo dpkg --add-architecture i386
+wget -nc https://dl.winehq.org/wine-builds/winehq.key
+sudo apt-key add winehq.key
+rm winehq.key
+
+# Ubuntu 20.04 (dépôts pour les autres versions d'Ubuntu disponible dans la doc d'origine)
+sudo add-apt-repository 'deb https://dl.winehq.org/wine-builds/ubuntu/ focal main'
+sudo apt-get update
+sudo apt-get upgrade
+sudo apt-get install --install-recommends winehq-staging
+sudo apt-get install libgnutls30:i386 libldap-2.4-2:i386 libgpg-error0:i386 libxml2:i386 libasound2-plugins:i386 \
+libsdl2-2.0-0:i386 libfreetype6:i386 libdbus-1-3:i386 libsqlite3-0:i386
+```
+
+## Lutris
+
+Enfin on passe à l'installation de Lutris : <https://lutris.net>
+>Lutris is an Open Source gaming platform for Linux. It installs and launches games so you can start playing without the hassle of setting up your games. Get your games from GOG, Steam, Battle.net, Origin, Uplay and many other sources running on any Linux powered gaming machine.
+
+```
+sudo add-apt-repository ppa:lutris-team/lutris
+sudo apt update
+sudo apt install lutris
+```
+
+## Création du launcher de World of Warcraft sur Lutris
+
+Une fois tous nos pré-requis d'installés, on peut lancer Lutris, celui-ci devrait être disponible dans votre barre d'applications.
+
+Lutris lancé, on clique sur le petit bouton (+) en haut à gauche de l'interface pour créer un launcher:
+- Dans l'onglet `Game info` on lui donne un nom (WoW par exemple),
+- Dans l'onglet `Game info` on selectionne le Runner `Wine (Runs Windows games)`,
+- Dans l'onglet `Game options` on clique sur `Browse` et on selectionne le chemin de l'exécutable de WoW (`WoW.exe`),
+- Dans `Runner options` on s'assure que `Enable DXVK` est bien actif
+
+On peut ensuite valider et lancer le jeu. Au premier lancement WineHQ demandera si vous souhaitez installer des composants supplémentaires, il vous faut bien cliquer sur `Install` ! Une fois tous les composants installés, le jeu devrait alors se lancer.
+
+## Affichage des FPS et performances GPU
+Une fois en jeu, vous pouvez afficher le nombre de FPS avec CTRL+R par défaut.
+
+Si vous souhaitez avoir plus d'information sur les performances GPU, vous pouvez utiliser MangoHUD : <https://lazylinuxuser.com/entertainment/mangohud/>
+
+## Performance Tweaks
+
+Référence: <https://github.com/lutris/docs/blob/master/Performance-Tweaks.md>
+
+#### Gamemode
+
+Référence: <https://github.com/FeralInteractive/gamemode>
+
+>Game Mode set your CPU governor to max performance while you are playing, and can improve FPS in some cases. It's automatically enabled for all your games when you have game mode installed on your system (for Lutris).
+
+```
+sudo apt install gamemode
+```
+
+#### World of Warcraft Configuration
+
+Lutris dispose d'une page wiki de configuration dédiée à World of Warcraft: <https://github.com/lutris/docs/blob/master/WorldOfWarcraft.md>
+
+Pour ma part j'ai juste récupéré l'option à rajouter dans le dossier WoW/WTF/Config.wtf : `SET worldPreloadNonCritical "0"`
+
+Une fois tout ceci installé/configuré, et vu que le laptop sur lequel cette procédure est effectué est TOUT sauf une bête de guerre, j'obtenais 20 FPS poussifs avec les réglages graphiques à fond.
+
+J'ai dû faire quelques tweaks pour que ce soit fluide à 60 FPS (mais c'est tout de même bien moche):
+- Multi-Echantillonage passé à `24 bits couleur 16 bits profondeur 1x multi-échantillon`
+- Désactivation de Filtre trilinéaire
+- Désactivation de Sync vertical
+- Désactivation de tous les effets Shader
+- Désactivation des ombres lisses
+
+A+
