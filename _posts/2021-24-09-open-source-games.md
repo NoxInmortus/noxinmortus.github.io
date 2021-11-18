@@ -11,6 +11,7 @@ ce post est/sera utilisé pour maintenir une liste de jeux open-source.
 
 ## Collections
 - Lutris "Lutris is an Open Source gaming platform for Linux. It installs and launches games so you can start playing without the hassle of setting up your games. Get your games from GOG, Steam, Battle.net, Origin, Uplay and many other sources running on any Linux powered gaming machine.": <https://lutris.net>
+- PlayOnLinux is a piece of software which allows you to easily install and use numerous games and apps designed to run with Microsoft Windows : <https://www.playonlinux.com/en>
 - Abandonware "Download abandonware games, from 1978 to 2010" : <https://www.myabandonware.com>
 - Open-Source Game Clones : <https://osgameclones.com/>
 - Play Classic Games "All CLASSIC old games in one place. Play the best old DOS or classic console games here, in a web browser!
