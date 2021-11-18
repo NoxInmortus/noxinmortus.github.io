@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Changer l'auteur de précédents commits
-categories: divers
+categories: Divers
 date: 2020-08-24
 ---
 

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Discord Webhook
-categories: divers
+categories: Divers
 date: 2021-08-06
 ---
 

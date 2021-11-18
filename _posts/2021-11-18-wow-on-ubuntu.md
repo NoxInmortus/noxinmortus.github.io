@@ -1,7 +1,7 @@
 ---
 layout: post
 title: World of Warcraft on Ubuntu
-categories: gaming
+categories: Gaming
 date: 2021-11-18
 ---
 
