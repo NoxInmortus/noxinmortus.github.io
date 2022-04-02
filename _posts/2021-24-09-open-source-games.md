@@ -26,11 +26,11 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 
 ## Games
 - A better world (Browser/Textuel) : <https://abw.blue/>
-- Across the Multiverse (Browser/Space/Generated) : https://across-multiverse.com/
-- AI Dungeon (Browser/Textuel/Generated) : https://play.aidungeon.io
+- Across the Multiverse (Browser/Space/Generated) : <https://across-multiverse.com/>
+- AI Dungeon (Browser/Textuel/Generated) : <https://play.aidungeon.io>
 - Angband (ASCII/Roguelike) : <https://rephial.org/>
-- Board Game Arena (Browser/Game Board): <https://fr.boardgamearena.com>
 - Cataclysm: Dark Days Ahead (Turn based strategy game): <https://cataclysmdda.org>
+- Colossal Cave Adventure (Browser/Textuel/RPG): <http://rickadams.org/adventure/>
 - Curse of War (ASCII/Strategy): <https://a-nikolaev.github.io/curseofwar/>
 - Daggerfall-Unity (Daggerfall/Roguelike/RPG) : <https://www.dfworkshop.net/> / <https://github.com/Interkarma/daggerfall-unity>
 - Eggvance (GameBoy Emulateur): <https://github.com/jsmolka/eggvance>
@@ -46,6 +46,7 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Open Surge (Sonic-like/Level-Creator) : <https://opensurge2d.org/>
 - Pixel Dungeon (Roguelike) : <https://watabou.itch.io/pixel-dungeon>
 - Red Eclipse (FPS/Quake-like): <https://www.redeclipse.net/>
+- Remnants of the Precursors (modern Master of Orion): <https://www.remnantsoftheprecursors.com/>
 - Shattered Pixel Dungeon (Roguelike): <https://shatteredpixel.com/> / <https://github.com/00-Evan/shattered-pixel-dungeon>
 - SSHTron (ASCII/Tron through SSH): <https://github.com/zachlatta/sshtron>
 - The Battle for Wesnoth (Strategy) : <https://www.wesnoth.org/>
