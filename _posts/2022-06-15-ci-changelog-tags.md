@@ -4,30 +4,28 @@ title: Tags et Changelog avec Gitlab-CI
 categories: Divers
 date: 2022-06-15
 ---
-
 Hello,
 
-Pour le contexte, il y a quelque temps,  je travaillais dans une certaine entreprise. Nous disposions d'une instance Gitlab sur laquelle était hébergée un certain nombre de roles Ansible. Leur maintenance était assez anarchique, et il était difficile de suivre l'évolution des rôles autrement qu'en consultant la liste des commits de chaque rôle, plus ou moins régulièrement.
+Pour le contexte, il y a quelque temps,  je travaillais dans une certaine entreprise. Nous disposions d'une instance GitLab sur laquelle était hébergée un certain nombre de roles Ansible. Leur maintenance était assez anarchique, et il était difficile de suivre l'évolution des rôles autrement qu'en consultant la liste des commits de chaque rôle, plus ou moins régulièrement.
 
 Certains ne s'en embarrassaient pas et réutilisaient les mêmes tags de chaque rôle pour chaque nouveau projet. Pour ma part, cela n'était pas envisageable, et ce, pour plusieurs raisons :
 - Au fil du temps, nos compétences, connaissances et besoins évoluent, et il est nécessaire d'adapter nos rôles en conséquence.
 - Ce qui n'était pas géré par les rôles était donc géré par des tasks supplémentaires "standalone". Lorsqu'un rôle finit par pouvoir gérer ce besoin, il me semble plus propre d'abandonner les tasks "standalone" (débattable sans doute).
-- Un rôle opérationnel à un instant T ne le sera pas forcément après un saut dans le temps si l'orchestrateur est différent et/ou si les cibles différentes. Il faut alors également adapter le rôle en conséquence.
+- Un rôle opérationnel à un instant T ne le sera pas forcément après un saut dans le temps si l'orchestrateur est différent et/ou si les cibles évoluent. Il faut alors également adapter le rôle en conséquence.
 
-À l'époque, j'avais proposé à ce que le nécessaire soit fait afin de pouvoir envoyer un récapitulatif hebdomadaire par mail des changements. Je ne suis plus dans cette entreprise, mais l'idée a eu le temps de murir, et j'ai fini par avoir un système d'intégration continue sur mon instance Gitlab personnelle qui répond à ce besoin, celui de réaliser un changelog à peu près propre. J'y ai par ailleurs ajouté la création automatique de tags, ce qui n'était pas forcément si simple à réaliser correctement. J'écris donc ce billet afin en tant que note technique de cette solution, je commence déjà à oublier... À noter que je ne suis ni expert Gitlab ni CI/CD de ce fait ce que j'écris plus bas peut très certainement être amélioré.
+Je ne suis plus dans cette entreprise, mais l'idée a eu le temps de murir, et j'ai fini par avoir un système d'intégration continue sur mon instance GitLab personnelle qui répond à ce besoin, celui de réaliser un changelog à peu près propre. J'y ai par ailleurs ajouté la création automatique de tags, ce qui n'était pas forcément si simple à réaliser correctement. J'écris donc ce billet afin en tant que note technique de cette solution, je commence déjà à oublier... À noter que je ne suis ni expert GitLab ni CI/CD de ce fait ce que j'écris plus bas peut très certainement être amélioré.
 
 On va partir du principe qu'on dispose d'un projet git sur lequel on veut avoir une génération de changelog et de tags automatisés.
 
-## Gitlab pré-requis
-Sur notre projet, dans l'interface de Gitlab, on accède au menu `Settings > Access Token`. On génère ici un Token avec le droit `write_repository`, et on lui affecte le rôle désiré. Selon le rôle, les permissions ne seront pas les mêmes. Pour notre besoin, le rôle `Maintainer` par defaut est nécessaire pour push sur la branche Master/Main. Voir [ici](https://docs.gitlab.com/ee/user/permissions.html#gitlab-cicd-permissions) pour plus de détails. Et on enregistre le Token pour la suite.
+## GitLab pré-requis
+Sur notre projet, dans l'interface de GitLab, on accède au menu `Settings > Access Token`. On génère ici un Token avec le droit `write_repository`, et on lui affecte le rôle désiré. Selon le rôle, les permissions ne seront pas les mêmes. Pour notre besoin, le rôle `Maintainer` par defaut est nécessaire pour push sur la branche Master/Main. Voir [ici](https://docs.gitlab.com/ee/user/permissions.html#gitlab-cicd-permissions) pour plus de détails. Et on enregistre le Token pour la suite.
 
 Une fois notre token obtenu, on se rends dans Settings > CI/CD de notre groupe, et on va créer deux variables:
 - `GITLAB_CI_USER`, dont la valeur sera un utilisateur que vous avez créé à l'avance pour cet usage. Par exemple j'ai créé un utilisateur `bot.gitlab-ci` et de type [external](https://docs.gitlab.com/ee/user/permissions.html#external-users). pour limiter ses accès par défaut.
 - `GITLAB_CI_TOKEN`, dont la valeur sera le Token généré juste précédemment. On cochera les cases `Protect variable` et `Mask variable` pour l'imiter l'usage et l'affichage du Token.
 
-
 ## Tags
-L'intérêt des tags est de pouvoir créer une version de notre projet à un instant T. Combiné au changelog, on va pouvoir facilement identifier une version du projet et les changements entre deux versions.
+L'intérêt des tags est de pouvoir créer une version de notre projet à un instant T (clairement pas exhaustif ce que je dis la). Combiné au changelog, on va pouvoir facilement identifier une version du projet et les changements entre deux versions.
 
 Sans plus attendre, voici son  `.gitlab-ci.yml`:
 
