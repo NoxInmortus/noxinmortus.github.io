@@ -92,12 +92,12 @@ echo "${major}.${minor}.${bugfix}"
 ```
 
 Le système procède dans cet ordre :
-- On définit une version par défaut dans le cas où aucun tag précédent n'existe (ici `1.0.0`, mais vous pouvez définir ce que vous voulez)
-- On récupère les tags existants et plus particulièrement le dernier, si aucun n'existe alors on utilisera la version par défaut pour la valeur de la variable `TAG_LATEST_VERSION`
-- Ensuite, on va filtrer le message de commit pour rechercher un string particulier pour l'utiliser dans notre variable `VERSION_INCREMENTER_ARG`, soit `major`, soit `added` / `feat` / `change` / `remove` qu'on remplacera par `feature` dans notre variable. Si rien n'est identifié, alors à défaut on aura `bug` comme valeur.
-- On appelle notre script `version-incrementer.sh` avec comme argument `TAG_LATEST_VERSION` et `VERSION_INCREMENTER_ARG`
-- Dans notre script, on va décomposer `TAG_LATEST_VERSION` en trois parties (version `major`, version `minor` et version `bugfix`), et identifier via la valeur de `VERSION_INCREMENTER_ARG` qu'est-ce qu'on souhaite incrémenter, puis on envoie en sortie de script la nouvelle version.
-- On crée alors le nouveau tag, et on push
+1. On définit une version par défaut dans le cas où aucun tag précédent n'existe (ici `1.0.0`, mais vous pouvez définir ce que vous voulez)
+2. On récupère les tags existants et plus particulièrement le dernier, si aucun n'existe alors on utilisera la version par défaut pour la valeur de la variable `TAG_LATEST_VERSION`
+3. Ensuite, on va filtrer le message de commit pour rechercher un string particulier pour l'utiliser dans notre variable `VERSION_INCREMENTER_ARG`, soit `major`, soit `added` / `feat` / `change` / `remove` qu'on remplacera par `feature` dans notre variable. Si rien n'est identifié, alors à défaut on aura `bug` comme valeur.
+4. On appelle notre script `version-incrementer.sh` avec comme argument `TAG_LATEST_VERSION` et `VERSION_INCREMENTER_ARG`
+5. Dans notre script, on va décomposer `TAG_LATEST_VERSION` en trois parties (version `major`, version `minor` et version `bugfix`), et identifier via la valeur de `VERSION_INCREMENTER_ARG` qu'est-ce qu'on souhaite incrémenter, puis on envoie en sortie de script la nouvelle version.
+6. On crée alors le nouveau tag, et on push
 
 Mon cas est particulièrement simple, n'ayant pas des gros besoins, mais l'ensemble est relativement KISS et facilement adaptable.
 
@@ -146,9 +146,7 @@ create_changelog:
       - master
 ```
 
-Ici avec `git-chglog`, il nous faut un dossier à la racine du projet nommé `.chglog`. Celui contient un fichier de template et à un autre de configuration, qui vont être utilisés par `git-chglog`. Deux exemples (sinon RTFM):
-  - <https://github.com/git-chglog/git-chglog/tree/master/.chglog>
-  - <https://git.tools01.noxinmortus.fr/sysadmins/ansible/role-zabbix/-/tree/master/.chglog>
+Ici avec `git-chglog`, il nous faut un dossier à la racine du projet nommé `.chglog`. Celui contient un fichier de template et à un autre de configuration, qui vont être utilisés par `git-chglog` ([exemple](<https://github.com/git-chglog/git-chglog/tree/master/.chglog>) (sinon RTFM).
 
 Il ne nous reste plus qu'a combiner nos CI de création de tags avec celle-ci, et voilà.
 
