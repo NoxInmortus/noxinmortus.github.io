@@ -1,24 +1,24 @@
 ---
 layout: post
-title: CI - Tags et Changelog avec Gitlab
+title: Tags et Changelog avec Gitlab-CI
 categories: Divers
 date: 2022-06-15
 ---
 
 Hello,
 
-Pour le contexte, il y a quelques temps je travaillais dans une certaine entreprise. Nous disposions d'une instance Gitlab sur laquelle était hébergée un certain nombre de roles Ansible. Leur maintenance était assez anarchique, et il était difficile de suivre l'évolution des rôles autrement qu'en consultant la liste des commits de chaque rôle, plus ou moins régulièrement.
+Pour le contexte, il y a quelque temps,  je travaillais dans une certaine entreprise. Nous disposions d'une instance Gitlab sur laquelle était hébergée un certain nombre de roles Ansible. Leur maintenance était assez anarchique, et il était difficile de suivre l'évolution des rôles autrement qu'en consultant la liste des commits de chaque rôle, plus ou moins régulièrement.
 
-Certains ne s'en embarrassaient pas, et réutilisaient les mêmes tags de chaque rôle pour chaque nouveau projet. Pour ma part, cela n'était pas envisageable, et ce pour plusieurs raisons :
+Certains ne s'en embarrassaient pas et réutilisaient les mêmes tags de chaque rôle pour chaque nouveau projet. Pour ma part, cela n'était pas envisageable, et ce, pour plusieurs raisons :
 - Au fil du temps, nos compétences, connaissances et besoins évoluent, et il est nécessaire d'adapter nos rôles en conséquence.
-- Ce qui n'était pas géré par les rôles était donc géré par des tasks supplémentaires "standalone". Lorsqu'un rôle finit par pouvoir gérer ce besoin, il me semble plus propre d'abandonner les tasks "standalone" (débatable, mais une task sera toujours mieux intégrée dans un rôle vis-à-vis des autres tasks, qu'une task "standalone").
-- Un rôle opérationnel à un instant T ne le sera pas forcément après un saut dans le temps si l'orchestrateur est différent et/ou si les cibles différentes. Il faut donc également adapter le rôle en conséquence.
+- Ce qui n'était pas géré par les rôles était donc géré par des tasks supplémentaires "standalone". Lorsqu'un rôle finit par pouvoir gérer ce besoin, il me semble plus propre d'abandonner les tasks "standalone" (débattable sans doute).
+- Un rôle opérationnel à un instant T ne le sera pas forcément après un saut dans le temps si l'orchestrateur est différent et/ou si les cibles différentes. Il faut alors également adapter le rôle en conséquence.
 
-A l'époque j'avais proposé à ce que le nécessaire soit fait afin de pouvoir envoyer un récapitulatif hebdomadaire par mail des changements. Je ne suis plus dans cette entreprise mais l'idée a eu le temps de murir, et j'ai fini par avoir un système d'intégration continue sur mon instance Gitlab personnelle qui réponds à ce besoin, celui de réaliser un CHANGELOG à peu près propre. J'y ai également ajouté la création automatique de tags, ce qui n'était pas forcément si simple à réaliser correctement. J'écris donc ce billet afin en tant que note technique de cette solution, je commence déjà à oublier... A noter que je ne suis ni expert Gitlab ni CI/CD donc ce que j'écris plus bas peut très certainement être amélioré.
+À l'époque, j'avais proposé à ce que le nécessaire soit fait afin de pouvoir envoyer un récapitulatif hebdomadaire par mail des changements. Je ne suis plus dans cette entreprise, mais l'idée a eu le temps de murir, et j'ai fini par avoir un système d'intégration continue sur mon instance Gitlab personnelle qui répond à ce besoin, celui de réaliser un changelog à peu près propre. J'y ai par ailleurs ajouté la création automatique de tags, ce qui n'était pas forcément si simple à réaliser correctement. J'écris donc ce billet afin en tant que note technique de cette solution, je commence déjà à oublier... À noter que je ne suis ni expert Gitlab ni CI/CD de ce fait ce que j'écris plus bas peut très certainement être amélioré.
 
-On va partir du principe qu'on dispose d'un projet git sur lequel on veut avoir une génération de CHANGELOG et de tags automatisés.
+On va partir du principe qu'on dispose d'un projet git sur lequel on veut avoir une génération de changelog et de tags automatisés.
 
-# Gitlab pré-requis
+## Gitlab pré-requis
 Sur notre projet, dans l'interface de Gitlab, on accède au menu `Settings > Access Token`. On génère ici un Token avec le droit `write_repository`, et on lui affecte le rôle désiré. Selon le rôle, les permissions ne seront pas les mêmes. Pour notre besoin, le rôle `Maintainer` par defaut est nécessaire pour push sur la branche Master/Main. Voir [ici](https://docs.gitlab.com/ee/user/permissions.html#gitlab-cicd-permissions) pour plus de détails. Et on enregistre le Token pour la suite.
 
 Une fois notre token obtenu, on se rends dans Settings > CI/CD de notre groupe, et on va créer deux variables:
@@ -26,8 +26,8 @@ Une fois notre token obtenu, on se rends dans Settings > CI/CD de notre groupe, 
 - `GITLAB_CI_TOKEN`, dont la valeur sera le Token généré juste précédemment. On cochera les cases `Protect variable` et `Mask variable` pour l'imiter l'usage et l'affichage du Token.
 
 
-# Tags
-L'intérêt des tags est de pouvoir créer une version de notre projet à un instant T. Combiné au Changelog, on va pouvoir facilement identifier une version du projet et les changements entre deux versions.
+## Tags
+L'intérêt des tags est de pouvoir créer une version de notre projet à un instant T. Combiné au changelog, on va pouvoir facilement identifier une version du projet et les changements entre deux versions.
 
 Sans plus attendre, voici son  `.gitlab-ci.yml`:
 
@@ -58,7 +58,7 @@ create_tag:
       - master
 ```
 
-Vous pouvez remarquer la définition d'une variable `VERSION_INCREMENTER_ARG` et l'appel au script `version-incrementer.sh`, que voici (ceci est un fork, et je n'ai pas retrouvé la source de l'original):
+Vous pouvez remarquer la définition d'une variable `VERSION_INCREMENTER_ARG` et l'appel au script `version-incrementer.sh` que voici (ceci est un fork, et je n'ai pas retrouvé la source de l'original):
 
 ```bash
 #!/usr/bin/env bash
@@ -98,14 +98,14 @@ Le système procède dans cet ordre :
 - On récupère les tags existants et plus particulièrement le dernier, si aucun n'existe alors on utilisera la version par défaut pour la valeur de la variable `TAG_LATEST_VERSION`
 - Ensuite, on va filtrer le message de commit pour rechercher un string particulier pour l'utiliser dans notre variable `VERSION_INCREMENTER_ARG`, soit `major`, soit `added` / `feat` / `change` / `remove` qu'on remplacera par `feature` dans notre variable. Si rien n'est identifié, alors à défaut on aura `bug` comme valeur.
 - On appelle notre script `version-incrementer.sh` avec comme argument `TAG_LATEST_VERSION` et `VERSION_INCREMENTER_ARG`
-- Dans notre script on va décomposer `TAG_LATEST_VERSION` en trois parties (version `major`, version `minor` et version `bugfix`), et identifier via la valeur de `VERSION_INCREMENTER_ARG` qu'est-ce qu'on souhaite incrémenter, puis on envoie en sortie de script la nouvelle version.
-- On créé alors le nouveau tag, et on push
+- Dans notre script, on va décomposer `TAG_LATEST_VERSION` en trois parties (version `major`, version `minor` et version `bugfix`), et identifier via la valeur de `VERSION_INCREMENTER_ARG` qu'est-ce qu'on souhaite incrémenter, puis on envoie en sortie de script la nouvelle version.
+- On crée alors le nouveau tag, et on push
 
-Mon cas est particulièrement simple n'ayant pas des gros besoins, mais l'ensemble est relativement KISS et facilement adaptable.
+Mon cas est particulièrement simple, n'ayant pas des gros besoins, mais l'ensemble est relativement KISS et facilement adaptable.
 
-# CHANGELOG
-## Conventional Commits
-La génération du CHANGELOG va se faire grâce aux descriptions de nos commits git. Et pour cela on va suivre une certaine convention pour écrire les message de commits, j'essaye de suivre [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#specification).
+## CHANGELOG
+### Conventional Commits
+La génération du changelog va se faire grâce aux descriptions de nos commits git. Et pour cela on va suivre une certaine convention pour écrire les message de commits, j'essaye de suivre [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/#specification).
 
 Exemple de ce que cela peut donner :
 ```
@@ -115,12 +115,12 @@ Added: psmisc package to pkg_installation variable
 Removed: workstation.bashrc file had nothing to do here
 ```
 
-## Choisir son générateur de CHANGELOG
+### Choisir son générateur de CHANGELOG
 On pourrait certainement se débrouiller juste avec git et bash, mais avoir un petit binaire qui gère cette partie serait un vrai gain de temps.
 
 Pour ma part j'ai choisi [git-chglog](https://github.com/git-chglog/git-chglog>), il s'agit tout simplement d'un binaire à placer quelque part dans le `PATH` de notre `gitlab-runner`.
 
-## Intégration continue sur notre projet
+### Intégration continue sur notre projet
 Toujours dans notre projet git, on va créer le fichier `.gitlab-ci.yml` qui va contenir notre tâche de génération du changelog :
 
 ```yaml
