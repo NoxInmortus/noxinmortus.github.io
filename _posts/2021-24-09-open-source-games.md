@@ -82,5 +82,6 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - SSHTron (ASCII/Tron through SSH): <https://github.com/zachlatta/sshtron>
 - Naikari (Action/Advendture Space Exploration): <https://naikari.github.io/index.html>
 - Thrive (Spore-like/Simulation): <https://github.com/Revolutionary-Games/Thrive>
+- Simutrans (Transportation Simulator): <https://www.simutrans.com/>
 
 A+
