@@ -13,7 +13,7 @@ Certains ne s'en embarrassaient pas et réutilisaient les mêmes tags de chaque 
 - Ce qui n'était pas géré par les rôles était donc géré par des tasks supplémentaires "standalone". Lorsqu'un rôle finit par pouvoir gérer ce besoin, il me semble plus propre d'abandonner les tasks "standalone" (débattable sans doute).
 - Un rôle opérationnel à un instant T ne le sera pas forcément après un saut dans le temps si l'orchestrateur est différent et/ou si les cibles évoluent. Il faut alors également adapter le rôle en conséquence.
 
-Je ne suis plus dans cette entreprise, mais l'idée a eu le temps de murir, et j'ai fini par avoir un système d'intégration continue sur mon instance GitLab personnelle qui répond à ce besoin, celui de réaliser un changelog à peu près propre. J'y ai par ailleurs ajouté la création automatique de tags, ce qui n'était pas forcément si simple à réaliser correctement. J'écris donc ce billet afin en tant que note technique de cette solution, je commence déjà à oublier... À noter que je ne suis ni expert GitLab ni CI/CD de ce fait ce que j'écris plus bas peut très certainement être amélioré.
+Je ne suis plus dans cette entreprise, mais l'idée a eu le temps de murir, et j'ai fini par avoir un système d'intégration continue sur mon instance GitLab personnelle qui répond à ce besoin, celui de réaliser un changelog à peu près propre. J'y ai par ailleurs ajouté la création automatique de tags, ce qui n'était pas forcément si simple à réaliser correctement. J'écris donc ce billet en tant que note technique de cette solution, je commence déjà à oublier... À noter que je ne suis ni expert GitLab ni CI/CD de ce fait ce que j'écris plus bas peut très certainement être amélioré.
 
 On va partir du principe qu'on dispose d'un projet git sur lequel on veut avoir une génération de changelog et de tags automatisés.
 
@@ -79,7 +79,7 @@ fi
 if [[ "${2}" == "feature" ]]; then
   minor=$(echo "${minor}" + 1 | bc)
 elif [[ "${2}" == "bug" ]]; then
-  bugfix=$(echo "${build}" + 1 | bc)
+  bugfix=$(echo "${bugfix}" + 1 | bc)
 elif [[ "${2}" == "major" ]]; then
   major=$(echo "${major}" + 1 | bc)
 else
