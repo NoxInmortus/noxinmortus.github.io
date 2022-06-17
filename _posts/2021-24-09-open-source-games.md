@@ -12,6 +12,7 @@ ce post est/sera utilisé pour maintenir une liste de jeux open-source.
 ## Collections
 - Lutris "Lutris is an Open Source gaming platform for Linux. It installs and launches games so you can start playing without the hassle of setting up your games. Get your games from GOG, Steam, Battle.net, Origin, Uplay and many other sources running on any Linux powered gaming machine.": <https://lutris.net>
 - PlayOnLinux is a piece of software which allows you to easily install and use numerous games and apps designed to run with Microsoft Windows : <https://www.playonlinux.com/en>
+- Bottles : Bottles' Gaming Environment comes preconfigured to support a large set of Windows video games on Linux. Thanks to our installers you can have immediate access to the most famous game stores (e.g. Epic Games Store, EA Launcher, Battle.net etc.) and then play your favorite games, just like on Windows. <https://usebottles.com/>
 - Abandonware "Download abandonware games, from 1978 to 2010" : <https://www.myabandonware.com>
 - Open-Source Game Clones : <https://osgameclones.com/>
 - Play Classic Games "All CLASSIC old games in one place. Play the best old DOS or classic console games here, in a web browser!
@@ -24,6 +25,7 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Watabou games (Browser): <http://watabou.ru/>
 - Jeux de devnewton (Browser): <https://play.devnewton.fr/>
 - Solarus Games: <https://www.solarus-games.org/fr/games>
+- itch.io (catégorie open-source): <https://itch.io/games/tag-open-source>
 
 ## Games
 
@@ -71,6 +73,8 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Super Dungeon Delve (Roguelike/Generated Levels): <https://github.com/benc-uk/super-dungeon-delve>
 - Veloren (MMORPG/Voxel/Minecraft-like): <https://veloren.net/>
 - Zorbash (Roguelike/Pixel art): <https://github.com/goblinhack/zorbash>
+- Basingstoke (Roguelike): <https://puppygames001.itch.io/basingstoke>
+- Greycess Knight RPG (RPG): <https://linuxfr.org/news/greycess-knight-rpg-sortie-de-la-premiere-version>
 
 ### Others
 - Eggvance (GameBoy Emulator): <https://github.com/jsmolka/eggvance>
@@ -83,5 +87,6 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Naikari (Action/Advendture Space Exploration): <https://naikari.github.io/index.html>
 - Thrive (Spore-like/Simulation): <https://github.com/Revolutionary-Games/Thrive>
 - Simutrans (Transportation Simulator): <https://www.simutrans.com/>
+- Orbiter (Space simulation): <http://orbit.medphys.ucl.ac.uk/>
 
 A+
