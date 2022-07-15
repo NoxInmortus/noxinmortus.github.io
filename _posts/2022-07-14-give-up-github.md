@@ -45,6 +45,9 @@ Voici donc mon plan d'action :
   - [x] NoxInmortus/docker-maniacontrol >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-maniacontrol>
   - [x] NoxInmortus/docker-ldap-tool-box >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-ldap-tool-box>
 - [ ] Suppression du code des dépôts Github avec fork et/ou stars avec une modification du README indiquant les raisons du changement et l'URL GitLab du projet
-- [ ] Mise à jour des différents README afin de supprimer les URLs Github
+  - [x] (2022-07-15) NoxInmortus/docker-build-pqchecker >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-build-pqchecker>
+  - [x] (2022-07-15) NoxInmortus/role-ispconfig >> <https://git.tools01.noxinmortus.fr/sysadmins/ansible/role-ispconfig>
+  - [ ] NoxInmortus/docker-maniaplanet >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-maniaplanet>
+- [x] (2022-07-15) Mise à jour des différents README afin de supprimer les URLs Github
 - [ ] Remplacement du workflow Github par une CI gitlab du projet `docker-build-pqchecker`
 - [ ] Migration du blog sur mon GitLab et création de sa CI de build
