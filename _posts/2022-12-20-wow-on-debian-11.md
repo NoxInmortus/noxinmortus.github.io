@@ -94,10 +94,6 @@ Une fois en jeu, vous pouvez afficher le nombre de FPS avec CTRL+R par défaut. 
 flatpak install flathub org.freedesktop.Platform.VulkanLayer.MangoHud//21.08
 ```
 
-flatpak override --user --filesystem=xdg-config/MangoHud:ro net.lutris.Lutris
-flatpak override --user --env=MANGOHUD=1 net.lutris.Lutris
-
-
 ### Gamemode
 
 Référence: <https://github.com/FeralInteractive/gamemode>
