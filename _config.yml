@@ -5,6 +5,8 @@ description: >-
   Réflexions diverses d'un sysadmin, soucieux d'éthique et d'environnement...mais pas que?
 url: "https://noxinmortus.github.io"
 github_username: NoxInmortus
+timezone: Europe/Paris
+encoding: "utf-8"
 
 theme: minima
 minima:
