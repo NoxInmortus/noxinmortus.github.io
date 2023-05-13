@@ -2,7 +2,7 @@ title: NoxInmortus Blog
 author: ""
 email: me [at] noxinmortus.fr
 description: >-
-  Réflexions diverses d'un sysadmin, soucieux d'éthique et d'environnement...mais pas que?
+  Réflexions sur divers sujets techniques, écologiques et éthiques.
 url: "https://noxinmortus.github.io"
 github_username: NoxInmortus
 timezone: Europe/Paris
@@ -11,14 +11,12 @@ encoding: "utf-8"
 theme: minima
 minima:
   skin: dark
-
 plugins:
   - jekyll-feed
   - jekyll-paginate
 
 paginate: 8
 paginate_path: /page:num/
-
 exclude:
   - .sass-cache/
   - .jekyll-cache/
@@ -33,3 +31,4 @@ exclude:
   - README.md
   - CHANGELOG.md
   - LICENSE
+  - CNAME
