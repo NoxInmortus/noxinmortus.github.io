@@ -7,14 +7,15 @@ url: "https://noxinmortus.github.io"
 github_username: NoxInmortus
 timezone: Europe/Paris
 encoding: "utf-8"
-
+markdown: kramdown
+kramdown:
+  toc_levels: 2..6
 theme: minima
 minima:
   skin: dark
 plugins:
   - jekyll-feed
   - jekyll-paginate
-
 paginate: 8
 paginate_path: /page:num/
 exclude:
