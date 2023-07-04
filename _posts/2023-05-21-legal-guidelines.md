@@ -12,7 +12,7 @@ La mobilisation contre la réforme des retraites donne lieu à une répression i
 
 ## Caisse de solidarité
 
-La [Caisse de solidarité](https://caisse-solidarite.fr/) est joignable par téléphone au 06.43.08.50.32, par mail au `caissedesolidarite@riseup.net`.
+La [Caisse de solidarité](https://caisse-solidarite.fr/) est joignable par téléphone au 06.43.08.50.32 et par mail à `caissedesolidarite@riseup.net`.
 
 Leurs recommendations:
 
