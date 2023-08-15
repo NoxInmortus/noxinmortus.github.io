@@ -32,6 +32,8 @@ date: 2023-07-03
   - Site web : <https://www.off-investigation.fr/>
   - Chaîne Youtube : <https://www.youtube.com/@offinvestigation6251>
   - Instance Peertube : <https://video.off-investigation.fr/>
+- Pure Politique, analyse d'actualité politique
+  - Chaîne Youtube: <https://www.youtube.com/c/purepolitique>
 - Thinkerview, longs entretiens sur divers sujets géopolitiques
   - Site web : <https://www.thinkerview.com/>
   - Chaîne Youtube : <https://www.youtube.com/@thinkerview>
@@ -81,7 +83,6 @@ date: 2023-07-03
 - Les ami.es des Soulèvements de la Terre : <https://t.me/infoline_25mars>
 - Lyon Insurrection : <https://t.me/lyoninsurrection>
 - Lyon en lutte : <https://t.me/lyonenlutte>
-- RelaisInfo, actualité en continue : <https://t.me/relaisinformation>
 - Villefranche Insurgée : <https://t.me/villefrancheinsurgee>
 
 ## Autres
