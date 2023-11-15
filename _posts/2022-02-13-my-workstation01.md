@@ -62,7 +62,7 @@ Source: <https://www.howtogeek.com/262720/how-to-enable-a-pre-boot-bitlocker-pin
 ## Software
 
 ### Windows Store
-Il y a encore un an je n'avais rien à faire du Windows Store et je le considérais comme un autre bloatware, et j'ai beaucoup lu sur ce sujet avant de décider de l'utiliser. On le sait tous, Windows est un gruyère plein de trous, cependant Microsoft à initié la construction d'un véritable système de sécurité via les [UWP Apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide), et il est donc recommandé d'installer les applications de préférence via le Windows Store. 
+Il y a encore un an je n'avais rien à faire du Windows Store et je le considérais comme un autre bloatware, et j'ai beaucoup lu sur ce sujet avant de décider de l'utiliser. On le sait tous, Windows est un gruyère plein de trous, cependant Microsoft à initié la construction d'un véritable système de sécurité via les [UWP Apps](https://docs.microsoft.com/en-us/windows/uwp/get-started/universal-application-platform-guide), et il est donc recommandé d'installer les applications de préférence via le Windows Store.
 
 Actuellement j'ai pu installer les outils suivants (d'autres ont pu être ajoutés depuis) :
 - Firefox (internet browser - open-source)
@@ -114,7 +114,7 @@ Pour pouvoir accéder à notre subsystem, on ouvre le [Windows Terminal](https:/
 
 Malgré donc ce WSL2 qui me permet de reproduire le même shell que sur une workstation sous Linux, il me manque un détail... L'interface dmenu que j'utilise pour Pass. Avec ça, en un raccourci clavier je peux accéder à mon pass-store et à ses secrets. Mais comment reproduire ça sous Windows et WSL2...
 
-#### [Pass et dmenu](https://git.tools01.noxinmortus.fr/sysadmins/dmenu-password-tool)
+#### [Pass et dmenu](https://git.spartan.noxinmortus.fr/noxinmortus/dmenu-password-tool)
 J'ai presque réussi à faire tomber le truc en marche (je me suis basé sur <https://medium.com/javarevisited/using-wsl-2-with-x-server-linux-on-windows-a372263533c3>):
 - Installer VcXsrv (Serveur X pour Windows)
 - Créer/modifier le raccourci pour VcXsrv afin d'avoir `Cible: "C:\Program Files\VcXsrv\xlaunch.exe" :0 -ac -terminate -lesspointer -multiwindow -clipboard -wgl -dpi auto`

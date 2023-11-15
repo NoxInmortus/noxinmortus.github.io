@@ -7,7 +7,7 @@ date: 2022-07-14
 
 _Brief summary for english readers who lost themselves here:_ \
 _Following the call to [Give Up GitHub: The Time Has Come!](https://sfconservancy.org/blog/2022/jun/30/give-up-github-launch/), I've decided to remove progressively my Github repositories, which were originally a mirror from my Gitlab instance._ \
-_In consequence, my repositories will only be available on my [GitLab](https://git.tools01.noxinmortus.fr/public), which is not yet open to new users, but I'm thinking about enabling Gitlab/Github OAuth registration methods in the near future._
+_In consequence, my repositories will only be available on my [GitLab](https://git.spartan.noxinmortus.fr/public), which is not yet open to new users, but I'm thinking about enabling Gitlab/Github OAuth registration methods in the near future._
 
 Hello,
 
@@ -38,16 +38,16 @@ Voici donc mon plan d'action :
 
 - [x] (2022-07-14) Désactivation du mirroring des dépôts sur mon GitLab
 - [x] (2022-07-14) Suppression des dépôts Github sans fork ni stars (je vais essayer d'indiquer l'URL GitLab du projet, la où j'ai pu partager dans le passé l'URL Github):
-  - [x] NoxInmortus/role-borgbackup >> <https://git.tools01.noxinmortus.fr/sysadmins/ansible/role-borgbackup>
-  - [x] NoxInmortus/waccounts >> <https://git.tools01.noxinmortus.fr/imperium/waccounts>
-  - [x] NoxInmortus/role-zabbix >> <https://git.tools01.noxinmortus.fr/sysadmins/ansible/role-zabbix>
-  - [x] NoxInmortus/docker-bounca >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-bounca>
-  - [x] NoxInmortus/docker-maniacontrol >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-maniacontrol>
-  - [x] NoxInmortus/docker-ldap-tool-box >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-ldap-tool-box>
+  - [x] NoxInmortus/role-borgbackup >> <https://git.spartan.noxinmortus.fr/ansible/role-borgbackup>
+  - [x] NoxInmortus/waccounts >> <https://git.spartan.noxinmortus.fr/noxinmortus/waccounts>
+  - [x] NoxInmortus/role-zabbix >> <https://git.spartan.noxinmortus.fr/ansible/role-zabbix>
+  - [x] NoxInmortus/docker-bounca >> <https://git.spartan.noxinmortus.fr/docker/docker-bounca>
+  - [x] NoxInmortus/docker-maniacontrol >> <https://git.spartan.noxinmortus.fr/docker/docker-maniacontrol>
+  - [x] NoxInmortus/docker-ldap-tool-box >> <https://git.spartan.noxinmortus.fr/docker/docker-ldap-tool-box>
 - [ ] Suppression du code des dépôts Github avec fork et/ou stars avec une modification du README indiquant les raisons du changement et l'URL GitLab du projet
-  - [x] (2022-07-15) NoxInmortus/docker-build-pqchecker >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-build-pqchecker>
-  - [x] (2022-07-15) NoxInmortus/role-ispconfig >> <https://git.tools01.noxinmortus.fr/sysadmins/ansible/role-ispconfig>
-  - [ ] NoxInmortus/docker-maniaplanet >> <https://git.tools01.noxinmortus.fr/sysadmins/docker/docker-maniaplanet>
+  - [x] (2022-07-15) NoxInmortus/docker-build-pqchecker >> <https://git.spartan.noxinmortus.fr/docker/docker-build-pqchecker>
+  - [x] (2022-07-15) NoxInmortus/role-ispconfig >> <https://git.spartan.noxinmortus.fr/ansible/role-ispconfig>
+  - [ ] NoxInmortus/docker-maniaplanet >> <https://git.spartan.noxinmortus.fr/docker/docker-maniaplanet>
 - [x] (2022-07-15) Mise à jour des différents README afin de supprimer les URLs Github
 - [ ] Remplacement du workflow Github par une CI gitlab du projet `docker-build-pqchecker`
 - [ ] Migration du blog sur mon GitLab et création de sa CI de build
