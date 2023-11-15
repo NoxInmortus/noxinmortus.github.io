@@ -26,6 +26,14 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Jeux de devnewton (Browser): <https://play.devnewton.fr/>
 - Solarus Games: <https://www.solarus-games.org/fr/games>
 - itch.io (catégorie open-source): <https://itch.io/games/tag-open-source>
+- Locomalito (Traditional games): <https://locomalito.com/>
+
+## Engines & Tools
+- Daggerfall Unity (Open-source engine for Daggerfall): <https://www.dfworkshop.net>
+- OpenMW (Open-source engine for Morrowind): <https://openmw.org/>
+- PolyMC (Open Source Minecraft launcher): <https://polymc.org/>
+- Twine (Create interactive, nonlinear stories): <https://twinery.org/>
+- VCMI (Open-source engine for Heroes of Might and Magic III): <https://vcmi.eu/>
 
 ## Games
 
@@ -36,14 +44,18 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Colossal Cave Adventure (Browser/Textuel/RPG): <http://rickadams.org/adventure/>
 
 ### FPS
+- ET: Legacy (FPS/Wolfenstein-compatible): <https://www.etlegacy.com/>
 - OpenArena (FPS/Quake-like): <http://www.openarena.ws>
 - Red Eclipse (FPS/Quake-like): <https://www.redeclipse.net/>
 - Unvanquished (FPS): <https://unvanquished.net/>
 
 ### Strategy
+- 0 A.D. (RTS): <https://play0ad.com/>
+- Beyond All Reason (RTS): <https://www.beyondallreason.info/>
 - Cataclysm: Dark Days Ahead (Turn based strategy game): <https://cataclysmdda.org>
 - Curse of War (ASCII/Strategy): <https://a-nikolaev.github.io/curseofwar/>
 - Freeciv (Strategy/Civilisation-like): <http://freeciv.org/>
+- MegaGlest (RTS): <https://megaglest.org/>
 - OpenRA (Strategy/Red Alert/Command & Conquer/Dune 2000): <https://www.openra.net/>
 - The Battle for Wesnoth (Strategy): <https://www.wesnoth.org/>
 - The Fertile Crescent (Strategy): <https://lincread.itch.io/the-fertile-crescent>
@@ -77,9 +89,11 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Greycess Knight RPG (RPG): <https://linuxfr.org/news/greycess-knight-rpg-sortie-de-la-premiere-version>
 
 ### Others
+- Armagetron Advanced (Tron-like): <https://www.armagetronad.org/>
 - Eggvance (GameBoy Emulator): <https://github.com/jsmolka/eggvance>
 - Hitchhiker's Guide to the Galaxy Infocom Adventure (Textuel): <https://douglasadams.com/creations/infocomjava.html>
 - Hedgewars (Worms-like): <https://www.hedgewars.org>
+- FreeOrion (Turn-based space empire and galactic conquest): <https://freeorion.org>
 - OpenRCT2 (RollerCoaster Tycoon 2): <https://openrct2.org>
 - Open Surge (Sonic-like/Level-Creator): <https://opensurge2d.org/>
 - Remnants of the Precursors (modern Master of Orion): <https://www.remnantsoftheprecursors.com/>
@@ -88,5 +102,6 @@ Playing old PC and console games can fill you with nostalgia." : <https://playcl
 - Thrive (Spore-like/Simulation): <https://github.com/Revolutionary-Games/Thrive>
 - Simutrans (Transportation Simulator): <https://www.simutrans.com/>
 - Orbiter (Space simulation): <http://orbit.medphys.ucl.ac.uk/>
+- Pioneer (Space adventure): <https://pioneerspacesim.net>
 
 A+
