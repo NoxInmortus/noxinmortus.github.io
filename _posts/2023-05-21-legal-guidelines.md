@@ -8,10 +8,9 @@ date: 2023-05-21
 * A markdown unordered list which will be replaced with the ToC
 {:toc}
 
-La mobilisation contre la réforme des retraites donne lieu à une répression inédite entaillant profondément les droits fondamentaux, dont la liberté de manifestation. Les arrestations arbitraires, l’emploi de nasses, les violences… illustrent l’existence d’illégalités systémiques dans le maintien de l’ordre et de graves dysfonctionnements institutionnels. Dans ce contexte dégradé, il est plus que jamais impératif que les citoyens maitrisent très concrètement leurs droits pour les faire valoir.
+Depuis la mobilisation contre la réforme des retraites, on assiste à une répression inédite entaillant profondément les droits fondamentaux, dont la liberté de manifestation. Les arrestations arbitraires, l’emploi de nasses, les violences… illustrent l’existence d’illégalités systémiques dans le maintien de l’ordre et de graves dysfonctionnements institutionnels. Dans ce contexte dégradé, il est plus que jamais impératif que les citoyens maitrisent très concrètement leurs droits pour les faire valoir.
 
 ## Caisse de solidarité
-
 La [Caisse de solidarité](https://caisse-solidarite.fr/) est joignable par téléphone au 06.43.08.50.32 et par mail à `caissedesolidarite@riseup.net`.
 
 Leurs recommendations:
@@ -33,6 +32,36 @@ Si aucun avocat n'est disponible, vous pouvez demander un avocat commis d’offi
 - Amandine Fabrègue
 - Anne Sophie Guerpillon
 - Adeline Dubost
+
+## Risques juridiques dans un contexte de lutte contre la publicité
+Les peines énoncées ici sont les peines **maximum**.
+
+L'ouverture des panneaux, retirer l'affiche, désactiver le courant éléctrique des panneaux, peindre un graffe ou mettre une autre affiche rentrent dans le cadre d'une "dégradation légère", sanctionnée par [l'Article 322-1 du Code Pénal](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000047053456/2023-01-26). La peine maximale encourue est de 3750 euros d'amende avec travaux d'intérêt généraux. Si il en résulte une "dégradation lourde" (panneau complètement hors service), la peine maximale encourue est de 2 ans d'emprisonnement et 30 000 euros d'amende.
+
+Si vous retirez les affiches des panneaux et êtes interpellé.es avec l'affiche sur vous, une accusion de vol serait possible, sanctionné par les [Articles 311-3](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000006418131?isSuggest=true) et [311-4](https://www.legifrance.gouv.fr/codes/article_lc/LEGIARTI000044394144/2022-05-25) du Code Pénal. Peine maximale encourue : 7 ans d'emprisonnement et 100 000 euros d'amende s'il est commis par plusieurs personnes.
+
+### Comment se comporter avec les FDO
+Si vous êtes interpellé par les forces de l'ordre :
+- On ne touche pas un membre des forces de l'odre, on ne se défend pas quand on est à leur contact, on ne répond pas à leur provocations éventuelles et on ne les provoque pas non plus. Globalement, on s'assure de toujours rester courtois.
+- Si on vous demande si c'est vous qui avez collé/éteint/graffé, répondez "je n'ai rien à déclarer" (dire "non" serait mentir et pourrait mener à des ennuis potentiels). Cela vous permet d'excercer votre droit au silence.
+- Si les forces de l'ordre vous attrapent alors que vous tentez de fuir (vous risquez d'être accusé.e de délit de fuite), vous pouvez subir un contrôle d'identité, et éventullement une garde à vue, même si elles sont très rares pour ce type d'action (la plupart du temps, iels demandent simplement d'arrêter). Si vous refusez le contrôle d'identité, vous pouvez être retenu sur place ou au commissariat pour une vérification d'identité.
+
+La vérification d'identité ne peut durer que 4h maximum, si au bout de 4h vous n'êtes toujours pas libre c'est que vous êtes en GAV, sinon vous êtes libre de partir. Regardez donc bien votre montre au début de la vérification. Si vous décidez de céder à la vérification d'identité, donnez uniquement les informations apparaissant sur votre carte d'identité (votre vraie adresse si celle sur la carte est ancienne). Si on vous pose d'autres questions (votre numéro de téléphone par exemple), répondez "je n'ai rien à déclarer" (le fait de garder le silence ne peut pas vous être reproché). Souvenez vous que la police est en droit de mentir, ne leur faîtes par confiance.
+
+La Garde à Vue commence à partir du moment où vous etes privé.e.s de liberté ou après 4 heures de contrôle d'identité, et peut durer jusqu'à 24 heures (renouvelable une fois, et deux fois en cas de menace terroriste). Vous avez le droit:
+- De voir un.e médecin : si vous en ressentez le besoin, vous pouvez le demander pour faire constater votre état de santé à votre arrivée en GAV (même si ça risque de rendre la GAV plus longue).
+- De voir un.e avocat.e : si vous en ressentez le besoin, on vous conseille de demander un.e avocat.e commis.e d'office (gratuit). Iel sera juste là pour s'assurer que votre GAV se déroule dans le respect de la loi. Vous pouvez simplement lui dire que vous avez décidé de garder le silence lors de votre interrogatoire.
+- De faire prévenir un de vos proches et votre employeur.
+
+La police prendra vos empreintes et une photo. Refuser est un délit, XR recommande d'accepter. On vous demandera également de prélever votre AND, XR recommande de refuser. Même si c'est un délit votre refus aurait très peu de chance d'être retenu lors d'un procès pour ce type d'action (procès lui-même très peu probable !).
+- L'ADN permet vous identifier vous, mais aussi les membres de votre famille
+- La prise d'ADN par les FDO n'est justifiée que dans certains cas (meutre, viol... et dégradation matérielle).
+- Si la prise d'ADN par les FDO est légale, refuser n'est généralement pas retenu contre vous. En effet, il y a un conflit juridique sur ce point entre le droit français et le droit européen, et la France a déjà été condamnée par la CEDH pour fichage abusif de sa population.
+- Si vous souhaitez prendre part à des actions plus engageantes à l'avenir, ou que le GVT devient plus sécuritaire, vous serez content de ne pas être fiché.e.s
+
+On vous demandera le code de déverrouillage de votre téléphone : refuser peut être considéré comme un délit, c'est pourquoi il faut éviter de le prendre ou à minima de le nettoyer avant l'action.
+
+Extrêmement peu probable, mais au cas où : si vous étiez amené.e en comparution immédiate, demandez le report du jugement pour préparer votre défense (les peines en comparution immédiate sont souvent plus lourdes).
 
 ## Quels sont vos droits face à la répression
 Ceci est une retranscription partielle de la vidéo de Blast de Vincent Brengarth, Avocat au bureau de Paris, du 22 mars 2023: <https://www.youtube.com/watch?v=sHnv06FJKt4>
