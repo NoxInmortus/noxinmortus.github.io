@@ -41,6 +41,14 @@ En fin de compte, les deux applications offrent un haut niveau de sécurité et 
 ## Activer les options de sécurité et de confidentialité de Signal
 Notez que au fil des mises à jour, le nom des options peuvent changer.
 
+### Activer la fonctionnalité Username
+Les Username sur Signal, à ne pas confondre avec votre pseudo qui est affiché a vos correspondants, est une fonctionnalité qui permet de joindre un contact sur Signal, via un identifiant de type "anonymous.123".
+
+- Ouvrez le menu "Paramètres" > et appuyez sur votre pseudo/image de profil.
+- Dans la partie inférieure de ce menu, vous aurez la section "Username", identifiable avec un imposant "@"
+- Cliquez dessus pour définir votre username, par exemple "anonymous.123"
+- Désormais lorsque vous souhaitez donner la possibilité à un correspondant de vous retrouver, il lui suffit d'appuyer sur le bouton nouveau message, de taper votre Username "anonymous.123", et il aura la possibilité de vous envoyer un message.
+
 ### Activer le NIP
 Le NIP (Numéro d'Identification Personnel) est un code qui permet de protéger l'accès à votre compte Signal. Par défaut, Signal vous demande votre code NIP régulièrement (vous pouvez désactiver cette fonctionnalité). Le NIP est différent de votre code PIN de carte SIM, ou du verrouillage de l'écran pour Signal. Il est propre à votre compte Signal, qui est lié à votre numéro de téléphone (qui peut cependant changer).
 
@@ -72,6 +80,12 @@ Vous pouvez également choisir la fréquence à laquelle Signal vous demandera v
 A noter que pour déverrouiller Signal, il vous faudra renseigner votre code de déverouillage (ou empreinte biométrique) de votre téléphone (Signal ré-utilise le système de verouillage natif du téléphone).
 
 ### Activer les options de confidentialité avancées
+Ne pas laisser son numéro être disponible pour les autres, et ne pas être retrouvable via son numéro:
+
+- Accédez à "Paramètres" > "Confidentialité" >  Numéro de téléphone
+- Selectionner "Nobody" / "Personne" pour "Qui peux voir mon numéro"
+- Selectionner "Nobody" / "Personne" pour "Qui peux me trouver avec mon numéro"
+
 La confidentialité pour les notifications sur Signal permet de ne pas afficher d'information lorsque vous recevez une notification de nouveau message:
 
 - Accédez à "Paramètres" > "Notifications".
@@ -83,6 +97,22 @@ Il est aussi recommandé de ne pas afficher votre nom sur Signal, mettez votre p
 - Appuyez sur le bouton "Modifier" à côté de votre nom.
 - Entrez votre nouveau nom dans le champ "Nom".
 - Appuyez sur "Enregistrer" pour sauvegarder vos modifications.
+
+Désactiver les accusés de reception et les indicateurs de saisis qui indiquent quand vous avez lu un message et quand vous êtes en cours d'écrire:
+
+- "Paramètres" > "Confidentialité" > Section "Messagerie"
+- Désactiver "Read receipts" / "Accusés de reception"
+- Désactiver "Typing indicators" / "Indicateur de saisie"
+
+Activer par défaut un délai de suppression des messages:
+
+- "Paramètres" > "Confidentialité" > Section "Messagerie"
+- Minuterie par défaut pour les nouveaux chats : 1 semaine reste relativement pratique, 2 jours pour correspondre à 48h de garde-à-vue par exemple.
+
+Désactiver les captures d'écran lorsque Signal est ouvert, et activer le clavier incognito, le premier est particulièrement important et peut empêcher une application espion de prendre des captures d'écran de vos conversations.
+- "Paramètres" > "Confidentialité" > Section "Sécurité de l'application"
+- Activer "Screen security" / "Sécurité de l'écran"
+- Activer "Incognito keyboard" "Clavier incognito"
 
 ## Sources
 - [Site officiel](https://www.signal.org)
@@ -99,5 +129,6 @@ Il est aussi recommandé de ne pas afficher votre nom sur Signal, mettez votre p
 - [Numerama Google décide d'utiliser le protocole de Signal](https://www.numerama.com/tech/670206-il-etait-temps-google-messages-va-securiser-plus-serieusement-les-discussions.html)
 - [Edward Snowden and Signal](https://twitter.com/Snowden/status/1347217810368442368)
 - [Secure Messaging Apps Comparison](https://www.securemessagingapps.com/)
+- [Keep your phone number private with username](https://signal.org/blog/phone-number-privacy-usernames/)
 
 A+
